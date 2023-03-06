@@ -23,6 +23,6 @@ urlpatterns = [
     path('information/', views.info, name="information"),
     path('about/', views.about, name="about"),
     path('dashboard/', views.dashboard, name='dashboard'),
-    path('dashboard/messages', views.dashboard_messages, name='dashboard_messages'),
+    path('dashboard/chats', views.dashboard_messages, name='dashboard_messages'),
     path('dashboard/chat/<int:id>', views.dashboard_chat, name="dashboard_chat")
 ]
