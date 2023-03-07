@@ -5,3 +5,4 @@ class Chats(models.Model):
     to = models.IntegerField()
     message = models.TextField(max_length=5000)
     creation_date = models.DateTimeField(auto_now=True)
+    creation_time = models.TimeField(auto_now=True)
