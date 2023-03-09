@@ -5,7 +5,7 @@ class Projects(models.Model):
     desc = models.TextField(max_length=5000)
     image = models.TextField(max_length=100)
     use = models.TextField(max_length=1000)
-    days = models.IntegerField(max_length=3)
+    days = models.IntegerField()
     resault = models.TextField(max_length=100)
 
 class Tages(models.Model):
@@ -13,5 +13,5 @@ class Tages(models.Model):
     color = models.TextField(max_length=7)
 
 class ProjectTages(models.Model):
-    projectId = models.IntegerField(max_length=11)
-    tageId = models.IntegerField(max_length=11)
+    projectId = models.IntegerField()
+    tageId = models.IntegerField()
