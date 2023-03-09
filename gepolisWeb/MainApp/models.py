@@ -6,6 +6,7 @@ class Projects(models.Model):
     image = models.TextField(max_length=100)
     use = models.TextField(max_length=1000)
     days = models.IntegerField()
+    price = models.IntegerField()
     resault = models.TextField(max_length=100)
 
 class Tages(models.Model):
