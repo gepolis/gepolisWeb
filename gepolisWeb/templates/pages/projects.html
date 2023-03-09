@@ -1,4 +1,22 @@
 {% extends 'base.html' %}
 {% block pagename %}Мои Работы{% endblock %}
 {% block main %}
+<div class="ui card" style="margin-left:10px;">
+    <div class="ui slide masked reveal image">
+        <img src="https://i.imgur.com/Yukc8w0.jpg" class="content">
+    </div>
+    <div class="content">
+        <a class="header" href="{% url 'projects' %}">Название</a>
+        <div class="meta">
+            <span class="date"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span>
+        </div>
+    </div>
+    <div class="extra content">
+        <a>
+          1,234
+            <i class="ruble sign icon"></i>
+
+        </a>
+    </div>
+</div>
 {% endblock %}
